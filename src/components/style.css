@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+:root{
+    --dark: #0C1B33;
+    --gray: #CEE0DC;
+    --blue: #1282A2;
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    background: black;
+}
+
+/* navbar css */
+.navbar{
+    color: var(--gray);
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links{
+    color: var(--gray);
+    float: right;
+    margin-inline: 1rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: var(--gray);
+    padding: 0.5rem 1rem;
+    font-family: 'Outfit', sans-serif;
+}
+
+.navbar img{
+    width: 3rem;
+    height: 3rem;
+    margin: 0.5rem;
+    border-radius: 50%;
+}
+
+/* hero text on left, hero img on right */
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.hero-text{
+    color: var(--gray);
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.hero-text h1{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.hero-text p{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.hero-img{
+    width: 50%;
+    height: 50%;
+    margin: 1rem;
+}
+
+
+
+.hero-img img{
+    width: 100%;
+    height: 15rem;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+
+.hero button{
+    background: var(--blue);
+    color: var(--gray);
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.footer{
+    color: var(--gray);
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+/* pin footer to bottom of the screen */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.footer p{
+    font-size: 1rem;
+}
+
+.footer a{
+    text-decoration: none;
+    color: var(--gray);
+}
+
+.footer a:hover{
+    color: var(--blue);
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media a{
+    text-decoration: none;
+    color: var(--gray);
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+}
+
+.social-media a:hover{
+    color: var(--blue);
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.contact a{
+    text-decoration: none;
+    color: var(--gray);
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+}
+
+.contact a:hover{
+    color: var(--blue);
+}
+
+
+
+/* media queries */
+@media screen and (max-width: 768px){
+    .hero{
+        flex-direction: column;
+    }
+    .hero-img{
+        width: 100%;
+        height: 100%;
+    }
+    .hero-text{
+        text-align: center;
+    }
+}
+
+
