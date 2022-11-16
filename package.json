@@ -2,7 +2,7 @@
   "name": "reid",
   "private": true,
   "version": "0.0.0",
-  "homepage": "ianco0k.github.io/reid",
+  "homepage": "https://ianco0k.github.io/reid",
   "type": "module",
   "scripts": {
     "dev": "vite",
