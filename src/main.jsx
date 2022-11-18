@@ -7,7 +7,7 @@ import Videos from './components/Videos';
 import './components/style.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <HashRouter basename={import.meta.env.PUBLIC_URL}>
+  <HashRouter basename='/reid/'>
     <Routes>
       <Route exact path="/" element={<Landing />} />
       <Route exact path="/contact" element={<Contact />} />
