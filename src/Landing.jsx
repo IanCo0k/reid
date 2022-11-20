@@ -24,7 +24,7 @@ export default function Landing() {
         </div>
       </div>
 
-      <div className="hero reverse">
+      <div className="hero reverse gradient1">
 
         <div className="hero-text">
           <h1>Interested in stocks?</h1>
@@ -37,7 +37,7 @@ export default function Landing() {
         </div>
       </div>
 
-      <div className="hero">
+      <div className="hero gradient2">
 
         <div className="hero-text">
           <h1>Helping people like you</h1>
