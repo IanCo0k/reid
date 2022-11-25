@@ -14,6 +14,7 @@ export default function Landing() {
 
       {/* hero div with text and button */}
       <div className="hero">
+        
         <div className="hero-text">
           <h1>Hi, I'm Reid</h1>
           <p>Licensed <span>Realtor</span></p>
@@ -29,7 +30,7 @@ export default function Landing() {
         <div className="hero-text">
           <h1>Interested in stocks?</h1>
           <p>Let's <span>chat</span></p>
-          <a href="https://reidnicholson.successrealtywm.com/"><button>Learn More</button></a>
+          <a href="./contact"><button>Learn More</button></a>
         </div>
 
         <div className="hero-img">

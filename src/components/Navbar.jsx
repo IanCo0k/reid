@@ -35,8 +35,8 @@ export default function Navbar() {
     <div className={show ? 'nav-links-dropdown' : 'hide'}>
       <ul className="nav-links-drop">
         <li><a href="/">Home</a></li>
-        <li><a href="/contact">Contact</a></li>
-        <li><a href="/videos">Videos</a></li>
+        <li><a href="./contact">Contact</a></li>
+        <li><a href="./videos">Videos</a></li>
       </ul>
     </div>
     </div>

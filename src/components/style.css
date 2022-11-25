@@ -12,14 +12,14 @@
 
 body{
     font-family: 'Outfit', sans-serif;
-    background: var(--dark);
+    background-color: var(--dark);
 }
 
 /* navbar css */
 .navbar{
     color: var(--gray);
     background: var(--dark);
-    font-size: 2.2rem;
+    font-size: 2rem;
     display: flex;
     justify-content: space-between;
 }
@@ -81,6 +81,7 @@ a{
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    padding: 2rem;
 }
 
 .hero span{
@@ -142,7 +143,7 @@ a{
     text-align: center;
     padding: 1rem;
     font-size: 1.2rem;
-
+    bottom: 0;
 }
 
 /* pin footer to bottom of the screen */
@@ -212,6 +213,9 @@ html, body {
     color: var(--dark);
     width: 50%;
     height: 50%;
+    /* cool box shadow effect */
+    box-shadow: 0 0 1rem 0 rgba(0,0,0,0.2);
+
 }
 
 .contact-form h1{
@@ -230,7 +234,7 @@ html, body {
 }
 
 .contact-form form input{
-    width: 40rem;
+    width: 100%;
     height: 4rem;
     margin: 0.5rem;
     padding: 0.5rem;
@@ -240,7 +244,7 @@ html, body {
 }
 
 .contact-form form textarea{
-    width: 40rem;
+    width: 100%;
     height: 10rem;
     margin: 0.5rem;
     padding: 0.5rem;
@@ -253,12 +257,23 @@ html, body {
     background: var(--dark);
     color: var(--gray);
     border: none;
-    width: 40rem;
+    width: 100%;
     height: 4rem;
     padding: 0.5rem 1rem;
     font-size: 1.2rem;
     border-radius: 0.5rem;
     cursor: pointer;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 1.5rem;
+    width: 100%;
+    height: 100%;
 }
 
 .testimonial{
@@ -438,6 +453,71 @@ iframe{
         transform: rotate(180deg);
         transition: all 0.5s ease;
       }
+
+      /* make contact form responsive for mobile */
+        .contact-form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 1rem;
+            background: var(--red);
+            padding: 1rem;
+            border-radius: 1rem;
+            color: var(--dark);
+            width: 100%;
+            height: 100%;
+            /* cool box shadow effect */
+            box-shadow: 0 0 1rem 0 rgba(0,0,0,0.2);
+        }
+
+        .contact-form form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 1rem;
+            padding: 1rem;
+        }
+
+        .contact-form form input{
+            width: 100%;
+            height: 4rem;
+            margin: 0.5rem;
+            padding: 0.5rem;
+            border: none;
+            border-radius: 0.5rem;
+            font-size: 1.8rem;
+        }
+
+        .contact-form form textarea{
+            width: 100%;
+            height: 10rem;
+            margin: 0.5rem;
+            padding: 0.5rem;
+            border: none;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .contact-form form button{
+            width: 100%;
+            height: 4rem;
+            padding: 0.5rem 1rem;
+            font-size: 1.2rem;
+            border-radius: 0.5rem;
+            cursor: pointer;
+        }
+
+        .contact-form form button:hover{
+            background: var(--dark);
+            color: var(--red);
+        }
+
+        iframe{
+            width: 100%;
+            height: 100%;
+        }
 }
 
 
